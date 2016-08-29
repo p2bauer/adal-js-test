@@ -6,7 +6,7 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Adal Test"/>
   <Description DefaultValue="Adal Test"/>
-  <HighResolutionIconUrl DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/images/hi-res-icon.png"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:8443/images/hi-res-icon.png"/>
   <SupportUrl DefaultValue="https://www.colligo.com/support"/>
   <AppDomains>
     <AppDomain>https://login.windows.net</AppDomain>
@@ -24,15 +24,15 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/appread/index.html"/>
+        <SourceLocation DefaultValue="https://localhost:8443/appread/index.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
       <TabletSettings>
-        <SourceLocation DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/appread/index.html"/>
+        <SourceLocation DefaultValue="https://localhost:8443/appread/index.html"/>
         <RequestedHeight>250</RequestedHeight>
       </TabletSettings>
       <PhoneSettings>
-        <SourceLocation DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/appread/index.html"/>
+        <SourceLocation DefaultValue="https://localhost:8443/appread/index.html"/>
       </PhoneSettings>
     </Form>
   </FormSettings>
@@ -71,13 +71,13 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="taskpaneButtonIcon1-16" DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/images/icon-16.png"/>
-        <bt:Image id="taskpaneButtonIcon1-32" DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/images/icon-32.png"/>
-        <bt:Image id="taskpaneButtonIcon1-80" DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/images/icon-80.png"/>
+        <bt:Image id="taskpaneButtonIcon1-16" DefaultValue="https://localhost:8443/images/icon-16.png"/>
+        <bt:Image id="taskpaneButtonIcon1-32" DefaultValue="https://localhost:8443/images/icon-32.png"/>
+        <bt:Image id="taskpaneButtonIcon1-80" DefaultValue="https://localhost:8443/images/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="funcFile" DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/FunctionFile/Functions.html"/>
-        <bt:Url id="taskPaneUrl1" DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/appread/index.html"/>
+        <bt:Url id="funcFile" DefaultValue="https://localhost:8443/FunctionFile/Functions.html"/>
+        <bt:Url id="taskPaneUrl1" DefaultValue="https://localhost:8443/appread/index.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="groupLabel1" DefaultValue="Colligo DEV"/>
