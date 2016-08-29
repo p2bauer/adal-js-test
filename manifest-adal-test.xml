@@ -25,11 +25,11 @@
     <Form xsi:type="ItemRead">
       <DesktopSettings>
         <SourceLocation DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/appread/index.html"/>
-        <RequestedHeight>250</RequestedHeight>
+        <RequestedHeight>450</RequestedHeight>
       </DesktopSettings>
       <TabletSettings>
         <SourceLocation DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/appread/index.html"/>
-        <RequestedHeight>250</RequestedHeight>
+        <RequestedHeight>450</RequestedHeight>
       </TabletSettings>
       <PhoneSettings>
         <SourceLocation DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/appread/index.html"/>
