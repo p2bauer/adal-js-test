@@ -280,7 +280,7 @@ var AuthenticationContext = (function () {
 
         this.callback = callback;
         this.registerCallback(expectedState, resource, callback);
-        this.verbose('Navigate to:' + urlNavigate);
+        this.verbose('_renewToken Navigate to:' + urlNavigate);
         this._saveItem(this.CONSTANTS.STORAGE.LOGIN_REQUEST, '');
         frameHandle.src = 'about:blank';
         this._loadFrameTimeout(urlNavigate, 'adalRenewFrame' + resource, resource);
@@ -305,7 +305,7 @@ var AuthenticationContext = (function () {
         urlNavigate += '&nonce=' + encodeURIComponent(this._idTokenNonce);
         this.registerCallback(expectedState, this.config.clientId, callback);
         this.idTokenNonce = null;
-        this.verbose('Navigate to:' + urlNavigate);
+        this.verbose('_renewIdToken Navigate to:' + urlNavigate);
         this._saveItem(this.CONSTANTS.STORAGE.LOGIN_REQUEST, '');
         frameHandle.src = 'about:blank';
         this._loadFrameTimeout(urlNavigate, 'adalIdTokenFrame', this.config.clientId);
@@ -403,7 +403,7 @@ var AuthenticationContext = (function () {
      */
     AuthenticationContext.prototype.promptUser = function (urlNavigate) {
         if (urlNavigate) {
-            this.info('MODIFIED Navigate to:' + urlNavigate);
+            this.info('promptUser MODIIFIED Navigate to:' + urlNavigate);
             //window.location.replace(urlNavigate);
             window.location = urlNavigate;
         } else {
