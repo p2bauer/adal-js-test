@@ -80,9 +80,9 @@
         <bt:Url id="taskPaneUrl1" DefaultValue="https://colligo-adal-owa-test.azurewebsites.net/appread/index.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="groupLabel1" DefaultValue="Colligo DEV"/>
-        <bt:String id="taskpaneButtonLabel1" DefaultValue="Upload Email"/>
-        <bt:String id="taskpaneButtonSuperTipTitle1" DefaultValue="Upload Email to SharePoint"/>
+        <bt:String id="groupLabel1" DefaultValue="ADAL TEST"/>
+        <bt:String id="taskpaneButtonLabel1" DefaultValue="ADAL TEST"/>
+        <bt:String id="taskpaneButtonSuperTipTitle1" DefaultValue="ADAL TEST"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="menuSuperTipDesc1" DefaultValue="This is the description for Menu 1"/>
