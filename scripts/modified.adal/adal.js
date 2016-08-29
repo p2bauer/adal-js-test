@@ -403,9 +403,9 @@ var AuthenticationContext = (function () {
      */
     AuthenticationContext.prototype.promptUser = function (urlNavigate) {
         if (urlNavigate) {
-            this.info('promptUser MODIIFIED Navigate to:' + urlNavigate);
-            //window.location.replace(urlNavigate);
-            window.location = urlNavigate;
+            this.info('promptUser Navigate to:' + urlNavigate);
+            window.location.replace(urlNavigate);
+            //window.location = urlNavigate;
         } else {
             this.info('Navigate url is empty');
         }
