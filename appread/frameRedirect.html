@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <script src="//appsforoffice.microsoft.com/lib/1/hosted/Office.js"></script>
+
+</head>
+
+<body>
+
+    <div id="output" class=""></div>
+
+    <script type="text/javascript">
+
+        // just spit out the current URL so we can see what we've received from ADAL on the callback.
+
+        var outputDiv = document.getElementById('output');
+        outputDiv.innerHTML = window.location.href;
+
+  </script>
+
+</body>
+
+</html>

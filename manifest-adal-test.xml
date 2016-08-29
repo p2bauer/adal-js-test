@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0">
+  <Id>15e3e207-16c4-4218-b8ef-13a8c1e45067</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Adal Test</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Adal Test"/>
+  <Description DefaultValue="Adal Test"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:8443/images/hi-res-icon.png"/>
+  <SupportUrl DefaultValue="https://www.colligo.com/support"/>
+  <AppDomains>
+    <AppDomain>https://login.windows.net</AppDomain>
+    <AppDomain>https://login.microsoftonline.net</AppDomain>
+    <AppDomain>https://login.microsoftonline.com</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="MailBox" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://localhost:8443/appread/index.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+      <TabletSettings>
+        <SourceLocation DefaultValue="https://localhost:8443/appread/index.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </TabletSettings>
+      <PhoneSettings>
+        <SourceLocation DefaultValue="https://localhost:8443/appread/index.html"/>
+      </PhoneSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="MailHost">
+        <DesktopFormFactor>
+          <FunctionFile resid="funcFile"/>
+          <ExtensionPoint xsi:type="MessageReadCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Group id="group1">
+                <Label resid="groupLabel1"/>
+                <Control xsi:type="Button" id="taskpaneButton1">
+                  <Label resid="taskpaneButtonLabel1"/>
+                  <Supertip>
+                    <Title resid="taskpaneButtonSuperTipTitle1"/>
+                    <Description resid="taskpaneButtonSuperTipDesc1"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="taskpaneButtonIcon1-16"/>
+                    <bt:Image size="32" resid="taskpaneButtonIcon1-32"/>
+                    <bt:Image size="80" resid="taskpaneButtonIcon1-80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="taskPaneUrl1"/>
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="taskpaneButtonIcon1-16" DefaultValue="https://localhost:8443/images/icon-16.png"/>
+        <bt:Image id="taskpaneButtonIcon1-32" DefaultValue="https://localhost:8443/images/icon-32.png"/>
+        <bt:Image id="taskpaneButtonIcon1-80" DefaultValue="https://localhost:8443/images/icon-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="funcFile" DefaultValue="https://localhost:8443/FunctionFile/Functions.html"/>
+        <bt:Url id="taskPaneUrl1" DefaultValue="https://localhost:8443/appread/index.html"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="groupLabel1" DefaultValue="Colligo DEV"/>
+        <bt:String id="taskpaneButtonLabel1" DefaultValue="Upload Email"/>
+        <bt:String id="taskpaneButtonSuperTipTitle1" DefaultValue="Upload Email to SharePoint"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="menuSuperTipDesc1" DefaultValue="This is the description for Menu 1"/>
+        <bt:String id="taskpaneButtonSuperTipDesc1" DefaultValue="This is the description for Taskpane Button 1"/>
+        <bt:String id="uilessButtonSuperTipDesc1" DefaultValue="This is the description for UI-less Button 1"/>
+        <bt:String id="uilessButtonSuperTipDesc2" DefaultValue="This is the description for UI-less Button 2"/>
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>
