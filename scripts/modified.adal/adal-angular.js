@@ -368,7 +368,7 @@
                     }
                 },
                 responseError: function (rejection) {
-                    authService.info('Getting error in the response.');
+                    authService.info('Getting error in the response.' + JSON.stringify(rejection));
                     if (rejection) {
                         if (rejection.status === 401) {
                             var resource = authService.getResourceForEndpoint(rejection.config.url);
