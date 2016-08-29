@@ -43,9 +43,9 @@
   <script src="app.routes.js"></script>
   <script src="home/home.controller.js"></script>
 
+<br/><br/><strong>URL</strong><br/>
     <div id="output" class=""></div>
-
-    <script type="text/javascript">
+ <script type="text/javascript">
 
         // just spit out the current URL so we can see what we've received from ADAL on the callback.
 
@@ -55,6 +55,23 @@
 		//document.writeln(window.location.href);
 
   </script>
+
+<br/><br/><strong>LOG</strong><br/>
+    <div id="log"></div>
+<script type="text/javascript">
+(function () {
+    var old = console.log;
+    var logger = document.getElementById('log');
+    console.log = function (message) {
+        if (typeof message == 'object') {
+            logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+        } else {
+            logger.innerHTML += message + '<br />';
+        }
+    }
+})();
+</script>
+   
 
 </body>
 
