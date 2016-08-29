@@ -17,8 +17,8 @@
       
       endpoints: {
         'https://graph.microsoft.com': 'https://graph.microsoft.com'
-      }
-      // cacheLocation: 'localStorage', // enable this for IE, as sessionStorage does not work for localhost. 
+      }, 
+      //cacheLocation: 'localStorage', // enable this for IE, as sessionStorage does not work for localhost. 
     };
     adalProvider.init(adalConfig, $httpProvider);
   }
